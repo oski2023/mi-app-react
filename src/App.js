@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const nombre = <h1>Oscar Marcelo</h1>;
+  const edad = <p>46 años</p>
+  const ocupacion = <p><i><strong>Desarrollador Web</strong></i></p>
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MostrarNombreComponente />
     </div>
   );
+}
+
+// el nombre de un componente inicia con mayuscula y es camellcase
+const MostrarNombreComponente = () => {
+  return <h1>Oscar Marcelo</h1>
 }
 
 export default App;
