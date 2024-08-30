@@ -1,4 +1,6 @@
 import './App.css';
+//ahora importamos el componente creado
+import { Usuario } from './components/Usuario';
 
 function App() {
   /* const nombre = <h1>Oscar Marcelo</h1>;
@@ -11,12 +13,5 @@ function App() {
   );
 }
 
-//creamos un componente
-const Usuario = () => {
-  return <div>
-            <h1>Nombre: Oscar</h1>
-            <p>Edad: 46 años</p>
-            <p>Ocupacion: Desarrollador</p>
-          </div>
-}
+
 export default App;
